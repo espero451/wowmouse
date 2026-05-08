@@ -5,7 +5,7 @@ from Xlib.ext import shape
 
 
 class CursorOverlay(QtWidgets.QWidget):
-    # Initialization
+
     def __init__(self, image_path):
         super().__init__()
 
@@ -109,9 +109,12 @@ class CursorOverlay(QtWidgets.QWidget):
         painter.drawPixmap(x, y, scaled)
 
 
-# App entrypoint
-if __name__ == "__main__":
+def main():
     app = QtWidgets.QApplication(sys.argv)
     overlay = CursorOverlay("overlay.png")
     overlay.show()
     sys.exit(app.exec())
+
+
+if __name__ == "__main__":
+    main()

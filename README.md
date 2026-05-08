@@ -26,10 +26,9 @@ EOF
 chmod 755 ~/.local/bin/wowmouse
 ```
 
-Replace `/absolute/path/to/wowmouse` with your project directory. If you move
-the directory later, update the launcher.
-s
-If `~/.local/bin` is not in your `PATH`, add:
+Replace `/absolute/path/to/wowmouse` with your project directory. 
+
+3. If `~/.local/bin` is not in your `PATH`, add:
 
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
